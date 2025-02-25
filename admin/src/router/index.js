@@ -1,15 +1,39 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+
+import eventEmitter from '@/utils/eventEmitter'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView,
+      name: '',
+      component: ()=>import('../layout/DefaultLayout.vue'),
+      children: [
+        {
+          path: '',
+          name: 'Home',
+          component: ()=>import('../views/HomeView.vue'),
+        }
+      ]
     },
+    {
+      path: '/auth/',
+      name: 'Auth',
+      component: ()=>import('../layout/AuthLayout.vue'),
+      children: [
+        {
+          path:'login',
+          name: 'Login',
+          component: ()=>import('../views/LoginView.vue')
+        }
+      ]
+    }
   ],
+})
+
+eventEmitter.on('API:UN_AUTH', ()=>{
+  router.push('/auth/login')
 })
 
 export default router
