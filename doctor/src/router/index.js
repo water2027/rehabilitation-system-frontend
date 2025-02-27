@@ -36,4 +36,8 @@ eventEmitter.on('API:UN_AUTH', ()=>{
   router.push('/auth/login')
 })
 
+// router.beforeEach((to, from, next)=>{
+
+// })
+
 export default router
