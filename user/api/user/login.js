@@ -2,7 +2,7 @@ import {
 	useRequest
 } from "../useRequest";
 
-export const userLogin = (loginRequestBody, success, fail, complete) => {
+export const userLogin = (loginRequestBody) => {
 	return useRequest({
 		url: '',
 		method: 'POST',
@@ -10,9 +10,6 @@ export const userLogin = (loginRequestBody, success, fail, complete) => {
 			'Content-Type': 'application/json'
 		},
 		needAuth:false,
-		data:loginRequestBody,
-		success,
-		fail,
-		complete
+		data:loginRequestBody
 	})
 }
