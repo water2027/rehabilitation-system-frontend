@@ -18,7 +18,7 @@ const sendCode = async () => {
 </script>
 
 <template>
-  <el-form @submit.prevent="login" :model="LoginRequest" label-width="80px">
+  <el-form class="w-2/5 mx-a mt-36" @submit.prevent="login" :model="LoginRequest" label-width="80px">
     <el-form-item label="手机号" prop="telephone">
       <el-input v-model="LoginRequest.telephone"></el-input>
     </el-form-item>

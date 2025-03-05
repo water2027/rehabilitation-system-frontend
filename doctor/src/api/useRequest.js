@@ -3,13 +3,14 @@ import axios from 'axios'
 import eventEmitter from '@/utils/eventEmitter'
 
 axios.interceptors.request.use((config) => {
-  if (config.url.startsWith('/auth')) {
+  if (!config.url.startsWith('/auth')) {
     // 登录接口
     return config
   }
   // 获取token操作
-  const token = localStorage.getItem('token')
-  if (!token) {
+  const token = {}
+  eventEmitter.emit('TOKEN:GET', token)
+  if (!token.value) {
     eventEmitter.emit('API:UN_AUTH')
     return
   }
@@ -46,8 +47,8 @@ axios.interceptors.response.use(
 )
 
 const instance = axios.create({
-  baseURL: 'http://localhost:3000',
+  baseURL: 'http://localhost:3000/api',
   timeout: 5000,
 })
 
-export { instance }
+export default instance

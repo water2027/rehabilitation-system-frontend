@@ -6,9 +6,7 @@ import {
 
 export default defineConfig({
 	presets: [
-		presetAttributify({
-			/* preset 选项 */
-		}),
+		presetAttributify({}),
 		presetUno(),
 	],
 });

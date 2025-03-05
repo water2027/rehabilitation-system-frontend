@@ -7,16 +7,16 @@ class EventEmitter {
     listeners = {
         'API:UN_AUTH': new Set(),
         'API:NOT_FOUND': new Set(),
+        'TOKEN:GET': new Set(),
     }
     /**
      * 添加事件监听器
      * @param {string} eventName - 事件名称
      * @param {Function} listener - 监听器函数
-     * @throws {Error} 当事件名称不支持时抛出错误
      */
     on(eventName, listener) {
         if (!this.listeners[eventName]) {
-            throw new Error(`Event with name ${eventName} is not supported`)
+            this.listeners[eventName] = new Set()
         }
         this.listeners[eventName].add(listener)
     }
