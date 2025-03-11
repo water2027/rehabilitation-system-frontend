@@ -36,6 +36,10 @@ eventEmitter.on('API:UN_AUTH', () => {
   router.push('/auth/login')
 })
 
+eventEmitter.on('API:NOT_REAL_NAME', () => {
+  router.push('/auth/real-name')
+})
+
 router.beforeEach((to, from, next) => {
   const token = {}
   eventEmitter.emit('TOKEN:GET', token)
