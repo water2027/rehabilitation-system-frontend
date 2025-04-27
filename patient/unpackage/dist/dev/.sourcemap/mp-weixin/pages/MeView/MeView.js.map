@@ -1,1 +1,0 @@
-{"version":3,"file":"MeView.js","sources":["../../../../../DownLoad/HBuilderX/plugins/uniapp-cli-vite/uniPage:/cGFnZXMvTWVWaWV3L01lVmlldy52dWU"],"sourcesContent":["import MiniProgramPage from 'D:/code/work/r-system/rehabilitation-system-frontend/patient/pages/MeView/MeView.vue'\nwx.createPage(MiniProgramPage)"],"names":[],"mappings":";;;;;;;AACA,GAAG,WAAW,eAAe;"}

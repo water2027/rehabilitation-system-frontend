@@ -1,1 +1,0 @@
-<view class="root data-v-c4435fb2"><view class="bar data-v-c4435fb2"><text class="other-text data-v-c4435fb2">{{a}}</text><text class="center-text data-v-c4435fb2">{{b}}</text><navigator class="other-text data-v-c4435fb2" url="{{d}}">{{c}}</navigator></view><slot></slot></view>
