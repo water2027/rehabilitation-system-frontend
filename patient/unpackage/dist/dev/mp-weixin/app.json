@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/CommunityView/CommunityView",
+    "pages/SchemeView/SchemeView",
+    "pages/MeView/MeView"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "selectedColor": "#ffaa00",
+    "borderStyle": "black",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "text": "虚拟社区",
+        "pagePath": "pages/CommunityView/CommunityView"
+      },
+      {
+        "text": "康复方案",
+        "pagePath": "pages/SchemeView/SchemeView"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/MeView/MeView"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

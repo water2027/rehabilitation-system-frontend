@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "little-card": "../../components/LittleCard/LittleCard",
+    "default-layout": "../../components/DefaultLayout/DefaultLayout"
+  }
+}

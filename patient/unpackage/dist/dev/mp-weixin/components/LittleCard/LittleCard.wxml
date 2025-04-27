@@ -1,0 +1,1 @@
+<view class="root data-v-90a4940f"><view class="img-container data-v-90a4940f"><image ref="img" class="card-img data-v-90a4940f" src="{{a}}" alt="{{b}}"/></view><text class="card-text data-v-90a4940f">{{c}}</text></view>
