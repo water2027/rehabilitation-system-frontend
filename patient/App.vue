@@ -21,4 +21,8 @@ page {
 	width:100%;
 	overflow:hidden;
 }
+view, text {
+	margin:0;
+	padding:0;
+}
 </style>

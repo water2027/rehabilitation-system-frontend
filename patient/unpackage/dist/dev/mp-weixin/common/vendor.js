@@ -7684,6 +7684,7 @@ exports.createSSRApp = createSSRApp;
 exports.f = f;
 exports.index = index;
 exports.p = p;
+exports.ref = ref;
 exports.resolveComponent = resolveComponent;
 exports.t = t;
 //# sourceMappingURL=../../.sourcemap/mp-weixin/common/vendor.js.map

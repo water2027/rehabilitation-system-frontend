@@ -1,3 +1,4 @@
+<!-- 上面是一张圆图片，下面是名字的卡片 -->
 <template>
 	<view class="root">
 		<view class="img-container">

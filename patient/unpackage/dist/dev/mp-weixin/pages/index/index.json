@@ -2,6 +2,8 @@
   "navigationBarTitleText": "首页",
   "usingComponents": {
     "little-card": "../../components/LittleCard/LittleCard",
+    "more-card": "../../components/MoreCard/MoreCard",
+    "article-card": "../../components/ArticleCard/ArticleCard",
     "default-layout": "../../components/DefaultLayout/DefaultLayout"
   }
 }

@@ -41,3 +41,11 @@
 .cards-root .card {
   width: 100%;
 }
+.more-card {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article {
+  height: 125px;
+}

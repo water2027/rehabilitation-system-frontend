@@ -1,3 +1,6 @@
+<!-- 性能不如原生，uniapp不推荐使用自定义的，微信小程序有一套自己的方案，也是不推荐 -->
+<!-- https://uniapp.dcloud.net.cn/collocation/pages.html#custom-tab-bar -->
+<!-- https://uniapp.dcloud.net.cn/component/custom-tab-bar.html#custom-tab-bar -->
 <template>
 	<view class="bar-root">
 		<view :class="`item ${item.name === currentPage?'select':''}`" v-for="(item,index) in routes" :key="item.name">
