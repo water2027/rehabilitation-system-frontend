@@ -55,6 +55,7 @@
 			cover:'http://iph.href.lu/768x256?text=test'
 		},
 	])
+
 </script>
 
 <style lang="scss">
